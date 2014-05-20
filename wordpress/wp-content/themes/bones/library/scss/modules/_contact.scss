@@ -1,0 +1,25 @@
+
+.contact-container {
+  clear: both;
+  overflow: hidden;
+}
+
+.contact-container > *,
+.contact-column {
+  float: left;
+  overflow: hidden;
+  width: calc(100% / 3);
+  padding: 0.3em;
+
+  h1, h2, h3, h4, h5, h6 {
+    min-height: 3em;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}

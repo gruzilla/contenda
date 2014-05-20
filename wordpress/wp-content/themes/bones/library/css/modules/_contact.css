@@ -1,0 +1,8 @@
+/* line 2, ../../scss/modules/_contact.scss */
+.contact-col {
+  float: left;
+  overflow: none;
+  width: calc(100% / 3);
+}
+
+/*# sourceMappingURL=_contact.css.map */
