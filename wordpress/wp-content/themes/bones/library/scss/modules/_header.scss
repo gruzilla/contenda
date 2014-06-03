@@ -18,7 +18,15 @@ BLOCKS
   text-transform: uppercase;
   text-align: right;
   font-family: $kabel;
-  font-size: 0.8em;
+  font-size: 1em;
+  line-height: 0.9em;
+  cursor: pointer;
+
+  .interaccount,
+  .dahm,
+  .contenda {
+    font-size: 1.1em;
+  }
 
   .department {
     border-bottom: 1px solid $black;

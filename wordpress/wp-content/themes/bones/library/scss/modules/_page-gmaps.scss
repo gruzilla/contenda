@@ -1,0 +1,14 @@
+section.page-gmaps-content {
+  width: 50%;
+  float: left;
+
+}
+section.page-gmaps-map {
+  width: 50%;
+  float: left;
+
+  .gmap {
+    height: 360px;
+    width: 100%;
+  }
+}

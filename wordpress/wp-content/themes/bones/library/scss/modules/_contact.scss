@@ -8,11 +8,11 @@
 .contact-column {
   float: left;
   overflow: hidden;
-  width: calc(100% / 3);
+  width: 33%;
   padding: 0.3em;
 
   h1, h2, h3, h4, h5, h6 {
-    min-height: 3em;
+    min-height: 5em;
   }
 
   &:first-child {
@@ -21,5 +21,6 @@
 
   &:last-child {
     padding-right: 0;
+    width: 34%;
   }
 }

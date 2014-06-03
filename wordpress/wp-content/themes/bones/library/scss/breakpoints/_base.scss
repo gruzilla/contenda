@@ -867,6 +867,32 @@ SIDEBARS & ASIDES
 
     }
 
+
+/* custom menu widget */
+.widget_nav_menu {
+  ul {
+    li {
+      margin-bottom: 0;
+      border-bottom: 1px solid $black;
+
+      a {
+        padding-top: 0.75em;
+        display: block;
+        color: $menu-link-color;
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: $menu-link-color-hover;
+          background-color: $light-gray;
+        }
+      }
+    }
+    li.current_page_item a {
+      background-color: $gray;
+    }
+  }
+}
+
     .no-widgets {
         background-color: $white;
         padding: 1.5em;

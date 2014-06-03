@@ -1544,15 +1544,23 @@ BLOCKS
   text-transform: uppercase;
   text-align: right;
   font-family: "KabelMediumRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
+  line-height: 0.9em;
+  cursor: pointer;
   padding-bottom: 0.2em;
   border-bottom: 2px double black;
 }
-/* line 23, ../scss/modules/_header.scss */
+/* line 25, ../scss/modules/_header.scss */
+.logo-area .interaccount,
+.logo-area .dahm,
+.logo-area .contenda {
+  font-size: 1.1em;
+}
+/* line 31, ../scss/modules/_header.scss */
 .logo-area .department {
   border-bottom: 1px solid black;
 }
-/* line 26, ../scss/modules/_header.scss */
+/* line 34, ../scss/modules/_header.scss */
 .logo-area .department.last {
   border-bottom: 2px double black;
 }
@@ -1568,7 +1576,7 @@ BLOCKS
 .contact-column {
   float: left;
   overflow: hidden;
-  width: calc(100% / 3);
+  width: 33%;
   padding: 0.3em;
 }
 /* line 14, ../scss/modules/_contact.scss */
@@ -1579,7 +1587,7 @@ BLOCKS
 .contact-column h4,
 .contact-column h5,
 .contact-column h6 {
-  min-height: 3em;
+  min-height: 5em;
 }
 /* line 18, ../scss/modules/_contact.scss */
 .contact-container > *:first-child,
@@ -1590,6 +1598,24 @@ BLOCKS
 .contact-container > *:last-child,
 .contact-column:last-child {
   padding-right: 0;
+  width: 34%;
+}
+
+/* line 1, ../scss/modules/_page-gmaps.scss */
+section.page-gmaps-content {
+  width: 50%;
+  float: left;
+}
+
+/* line 6, ../scss/modules/_page-gmaps.scss */
+section.page-gmaps-map {
+  width: 50%;
+  float: left;
+}
+/* line 10, ../scss/modules/_page-gmaps.scss */
+section.page-gmaps-map .gmap {
+  height: 360px;
+  width: 100%;
 }
 
 /*********************
@@ -2436,7 +2462,30 @@ SIDEBARS & ASIDES
   /* deep nesting */
 }
 
-/* line 870, ../scss/breakpoints/_base.scss */
+/* custom menu widget */
+/* line 874, ../scss/breakpoints/_base.scss */
+.widget_nav_menu ul li {
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+/* line 878, ../scss/breakpoints/_base.scss */
+.widget_nav_menu ul li a {
+  padding-top: 0.75em;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+/* line 884, ../scss/breakpoints/_base.scss */
+.widget_nav_menu ul li a:hover, .widget_nav_menu ul li a:focus {
+  color: #171717;
+  background-color: #efefef;
+}
+/* line 890, ../scss/breakpoints/_base.scss */
+.widget_nav_menu ul li.current_page_item a {
+  background-color: #eaedf2;
+}
+
+/* line 896, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2449,7 +2498,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 883, ../scss/breakpoints/_base.scss */
+/* line 909, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: black;
@@ -2465,12 +2514,12 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 904, ../scss/breakpoints/_base.scss */
+/* line 930, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 908, ../scss/breakpoints/_base.scss */
+/* line 934, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover, .footer-links ul li a:focus {
   text-decoration: none;
   color: #cfcfcf;
@@ -2708,7 +2757,8 @@ you can add resource intensive styles.
   /* line 153, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
+    margin: 0 0 2.2em 0;
+    /* custom menu widget */
   }
   /* line 158, ../scss/breakpoints/_768up.scss */
   .widget ul li {
@@ -2720,28 +2770,9 @@ you can add resource intensive styles.
     margin-top: 0.75em;
     padding-left: 1em;
   }
-
-  /* custom menu widget */
-  /* line 177, ../scss/breakpoints/_768up.scss */
-  .widget_nav_menu ul li {
+  /* line 176, ../scss/breakpoints/_768up.scss */
+  .widget.widget_nav_menu ul li {
     margin-bottom: 0;
-    border-bottom: 1px solid black;
-  }
-  /* line 181, ../scss/breakpoints/_768up.scss */
-  .widget_nav_menu ul li a {
-    padding-top: 0.75em;
-    display: block;
-    color: black;
-    text-decoration: none;
-  }
-  /* line 187, ../scss/breakpoints/_768up.scss */
-  .widget_nav_menu ul li a:hover, .widget_nav_menu ul li a:focus {
-    color: #171717;
-    background-color: #efefef;
-  }
-  /* line 193, ../scss/breakpoints/_768up.scss */
-  .widget_nav_menu ul li.current_page_item a {
-    background-color: #eaedf2;
   }
 
   /* links widget */
@@ -2763,7 +2794,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 298, ../scss/breakpoints/_768up.scss */
+  /* line 283, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
