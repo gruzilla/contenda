@@ -1582,14 +1582,20 @@ BLOCKS
 /* line 14, ../scss/modules/_contact.scss */
 .contact-container > * .company-container,
 .contact-column .company-container {
-  min-height: 6em;
+  min-height: 8em;
+  display: inline-block;
 }
 /* line 18, ../scss/modules/_contact.scss */
+.contact-container > * .company-container p,
+.contact-column .company-container p {
+  margin: 0;
+}
+/* line 23, ../scss/modules/_contact.scss */
 .contact-container > *:first-child,
 .contact-column:first-child {
   padding-left: 0;
 }
-/* line 22, ../scss/modules/_contact.scss */
+/* line 27, ../scss/modules/_contact.scss */
 .contact-container > *:last-child,
 .contact-column:last-child {
   padding-right: 0;

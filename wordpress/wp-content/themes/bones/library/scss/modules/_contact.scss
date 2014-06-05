@@ -12,7 +12,12 @@
   padding: 0.3em;
 
   .company-container {
-    min-height: 6em;
+    min-height: 8em;
+    display: inline-block;
+
+    p {
+      margin: 0;
+    }
   }
 
   &:first-child {
