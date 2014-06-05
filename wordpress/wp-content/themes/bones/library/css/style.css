@@ -1586,16 +1586,26 @@ BLOCKS
   display: inline-block;
 }
 /* line 18, ../scss/modules/_contact.scss */
+.contact-container > * .company-container h1, .contact-container > * .company-container h2, .contact-container > * .company-container h3, .contact-container > * .company-container h4, .contact-container > * .company-container h5, .contact-container > * .company-container h6,
+.contact-column .company-container h1,
+.contact-column .company-container h2,
+.contact-column .company-container h3,
+.contact-column .company-container h4,
+.contact-column .company-container h5,
+.contact-column .company-container h6 {
+  margin-bottom: 0;
+}
+/* line 22, ../scss/modules/_contact.scss */
 .contact-container > * .company-container p,
 .contact-column .company-container p {
   margin: 0;
 }
-/* line 23, ../scss/modules/_contact.scss */
+/* line 27, ../scss/modules/_contact.scss */
 .contact-container > *:first-child,
 .contact-column:first-child {
   padding-left: 0;
 }
-/* line 27, ../scss/modules/_contact.scss */
+/* line 31, ../scss/modules/_contact.scss */
 .contact-container > *:last-child,
 .contact-column:last-child {
   padding-right: 0;
