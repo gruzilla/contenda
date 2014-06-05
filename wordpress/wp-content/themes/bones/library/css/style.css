@@ -1580,14 +1580,9 @@ BLOCKS
   padding: 0.3em;
 }
 /* line 14, ../scss/modules/_contact.scss */
-.contact-container > * h1, .contact-container > * h2, .contact-container > * h3, .contact-container > * h4, .contact-container > * h5, .contact-container > * h6,
-.contact-column h1,
-.contact-column h2,
-.contact-column h3,
-.contact-column h4,
-.contact-column h5,
-.contact-column h6 {
-  min-height: 5em;
+.contact-container > * .company-container,
+.contact-column .company-container {
+  min-height: 6em;
 }
 /* line 18, ../scss/modules/_contact.scss */
 .contact-container > *:first-child,
