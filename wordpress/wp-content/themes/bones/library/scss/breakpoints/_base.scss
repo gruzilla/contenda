@@ -912,6 +912,14 @@ FOOTER STYLES
     color: $light-gray;
 }
 
+@media (min-height: 800px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
     /*
     if you checked out the link above:
     http://www.alistapart.com/articles/organizing-mobile/

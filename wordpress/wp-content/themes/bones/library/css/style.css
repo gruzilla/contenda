@@ -2516,6 +2516,14 @@ FOOTER STYLES
   color: #efefef;
 }
 
+@media (min-height: 800px) {
+  /* line 916, ../scss/breakpoints/_base.scss */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
 /*
 if you checked out the link above:
 http://www.alistapart.com/articles/organizing-mobile/
@@ -2525,12 +2533,12 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 930, ../scss/breakpoints/_base.scss */
+/* line 938, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 934, ../scss/breakpoints/_base.scss */
+/* line 942, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover, .footer-links ul li a:focus {
   text-decoration: none;
   color: #cfcfcf;
