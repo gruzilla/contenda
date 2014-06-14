@@ -609,8 +609,6 @@ more here: http://www.newnet-soft.com/blog/csstypography
 */
 /* line 64, ../scss/partials/_typography.scss */
 p {
-  -ms-word-break: break-all;
-  -ms-word-wrap: break-all;
   word-break: break-word;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -1519,8 +1517,6 @@ more here: http://www.newnet-soft.com/blog/csstypography
 */
 /* line 64, ../scss/partials/_typography.scss */
 p {
-  -ms-word-break: break-all;
-  -ms-word-wrap: break-all;
   word-break: break-word;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -1717,8 +1713,6 @@ more here: http://www.newnet-soft.com/blog/csstypography
 */
 /* line 64, ../scss/partials/_typography.scss */
 p {
-  -ms-word-break: break-all;
-  -ms-word-wrap: break-all;
   word-break: break-word;
   word-break: break-word;
   -webkit-hyphens: auto;
