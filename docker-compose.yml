@@ -1,0 +1,11 @@
+contenda_mysql:
+  image: mysql:5.5
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=contenda
+    - MYSQL_USER=contenda
+    - MYSQL_PASSWORD=contenda
+  volumes:
+    - ./data/mysql:/var/lib/mysql
+  ports:
+    - "3306:3306"
