@@ -19,3 +19,21 @@ use 127.0.0.1 if you want to use docker or TCP instead of a socket.
 using php built in http-server. use `wordpress` as docroot:
 
     php -S localhost:8080 -t wordpress
+
+upgrading wordpress
+-------------------
+
+using composer:
+
+1) change desired version in composer.json
+2) run update:
+
+    composer.phar update
+
+3) update wordpress-database
+
+http://localhost:8080/wp-admin/upgrade.php
+
+or
+
+http://www.contenda.at/wp-admin/upgrade.php
