@@ -1,0 +1,6 @@
+# Limit logins and admin by IP
+#<Limit GET POST PUT>
+#    order deny,allow
+#    deny from all
+#    allow from 80.110.46.4
+#</Limit>

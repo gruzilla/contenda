@@ -3,7 +3,6 @@
 	if ( ! wp || ! wp.customize ) { return; }
 	var api = wp.customize;
 
-
 	/**
 	 * wp.customize.HeaderTool.CurrentView
 	 *
@@ -70,7 +69,7 @@
 		},
 
 		setButtons: function() {
-			var elements = $('.actions .remove');
+			var elements = $('#customize-control-header_image .actions .remove');
 			if (this.model.get('choice')) {
 				elements.show();
 			} else {
